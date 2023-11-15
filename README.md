@@ -1,1 +1,1 @@
-The blog yo
+Read the blog yo
