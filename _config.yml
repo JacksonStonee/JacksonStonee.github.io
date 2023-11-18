@@ -13,7 +13,7 @@ title: Jackson Stone                          # the main title
 tagline: A personal blog dedicated to security research, DFIR, malware analysis, CTFs and many more!  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A personal blog dedicated to security research, DFIR, malware analysis, CTFs and many more!
+  A personal blog dedicated to security research, DFIR, malware analysis, CTFs and more!
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://jacksonstonee.github.io'
