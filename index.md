@@ -1,20 +1,25 @@
 ---
 layout: single
-author_profile: true
+author_profile: false
 title: ""
 permalink: /
+classes: wide
 ---
 
-{::comment}
-Homepage structure mirrors https://0xboku.com/ — a technical, minimal,
-category-heavy landing page with the author sidebar rendered on the left.
-Fill in each section with real work over time; the scaffolding stays.
+<!--
+  Homepage structure mirrors https://0xboku.com/ — no sidebar, an inline bio
+  block at the top, then category H1 sections, then a Recent Posts feed.
+  Fill each bullet in over time; the `(placeholder)` markers keep bullets
+  from rendering empty. Replace with `[Title](url)` when you have real links.
+-->
 
-Each bullet has an "ADD:" HTML comment marking where a real URL/writeup goes.
-The visible "(placeholder)" text is intentional — it keeps bullets from
-rendering empty and signals sections still to be filled. Delete "(placeholder)"
-and the comment, then paste your real link + title.
-{:/comment}
+<p markdown="1">
+**Jackson Stone**<br>
+[LinkedIn](https://www.linkedin.com/in/jackson-stone1/) &bull; [GitHub](https://github.com/JacksonStonee)<br>
+*Senior Incident Responder &mdash; Incident Response & Offensive Security*
+</p>
+
+---
 
 # Incident Response
 
@@ -73,20 +78,12 @@ and the comment, then paste your real link + title.
 
 ### Recent Posts
 
-{::comment}
-`layout: single` gives us the author sidebar but does NOT auto-render a post
-feed (that's the `home` layout). We render the five most recent posts here
-with a small Liquid loop so this page can keep the sidebar AND show a feed.
-Adjust `limit:` to change how many posts appear.
-{:/comment}
 {% assign recent_posts = site.posts | sort: "date" | reverse %}
 <ul class="post-list">
   {% for post in recent_posts limit: 5 %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>&nbsp;— {{ post.date | date: "%Y-%m-%d" }}</small>
+      <small>&nbsp;&mdash; {{ post.date | date: "%Y-%m-%d" }}</small>
     </li>
   {% endfor %}
 </ul>
-
-<p><a href="/posts/">All posts &rarr;</a></p>

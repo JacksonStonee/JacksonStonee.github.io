@@ -16,7 +16,8 @@ url                     : "https://jacksonstonee.github.io"   # user-level GitHu
 baseurl                 : ""                                  # no baseurl for user sites
 repository              : "jacksonstonee/jacksonstonee.github.io"
 teaser                  : # /assets/images/teaser.jpg
-logo                    : # /assets/images/site-logo.png
+logo                    : "/assets/images/bio-photo.png"   # small masthead icon (Boku-style)
+masthead_title          : " "                              # blank string hides the text title next to the logo
 words_per_minute        : 200
 enable_copy_code_button : true
 search                  : true
@@ -151,7 +152,7 @@ defaults:
       type              : posts
     values:
       layout            : single
-      author_profile    : true
+      author_profile    : false   # Boku-style: no left sidebar, bio is inline in content
       read_time         : true
       comments          : false
       share             : false
@@ -165,4 +166,4 @@ defaults:
       type              : pages
     values:
       layout            : single
-      author_profile    : true
+      author_profile    : false   # Boku-style: no left sidebar

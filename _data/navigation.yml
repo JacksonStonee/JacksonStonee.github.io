@@ -1,11 +1,6 @@
 # Main site navigation — rendered in the masthead
-# See: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+# Boku-style: one link + the search icon. Add more entries here if you
+# ever want them back (Posts / Exploits / About).
 main:
-  - title: "Home"
+  - title: "HomePage"
     url: /
-  - title: "Posts"
-    url: /posts/
-  - title: "Exploits"
-    url: /exploits/
-  - title: "About"
-    url: /about/

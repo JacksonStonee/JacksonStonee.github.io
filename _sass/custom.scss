@@ -2,11 +2,8 @@
 // custom.scss — site-level overrides on top of Minimal Mistakes
 // -----------------------------------------------------------------------------
 //
-// This file is imported LAST in assets/css/main.scss, so any selector here
-// wins over the vendored theme without forking it.
-//
-// The only thing living here right now is the sidebar avatar hover-enlarge
-// effect migrated from the old Chirpy theme.
+// Imported LAST in assets/css/main.scss so any selector here wins over the
+// vendored theme without forking it.
 //
 // TWEAK GUIDE (edit these two values, nothing else):
 //
@@ -14,22 +11,49 @@
 //                       common MM values: 1.10 / 1.15 / 1.20.
 //   transition 0.5s  -> half-second glide. Try 0.3s for snappier, 0.7s for
 //                       lazier. Keep the curve as ease-in-out for a smooth
-//                       feel — or swap to cubic-bezier(0.4, 0, 0.2, 1) for
+//                       feel, or swap to cubic-bezier(0.4, 0, 0.2, 1) for
 //                       the material-design curve most modern themes use.
 //                       Avoid `linear` (robotic) and `ease` (too snappy).
 //
 // We animate `transform: scale()` — NOT width/height — so the surrounding
-// sidebar layout never reflows while the image grows.
+// layout never reflows while the image grows.
 // -----------------------------------------------------------------------------
 
-// Preserve hover-enlarge animation from Chirpy theme
-.author__avatar {
-  img {
-    transition: transform 0.5s ease-in-out;
-    transform-origin: center center;
+// -----------------------------------------------------------------------------
+// Hover-enlarge on the logo, wherever it appears.
+//   .site-logo img       -> the small square logo in the masthead
+//                           (Boku-style layout — this is the primary target)
+//   .author__avatar img  -> the round avatar in the left sidebar
+//                           (present only if a page uses author_profile: true)
+// Both selectors are included so the animation works if you ever flip the
+// sidebar back on for a page.
+// -----------------------------------------------------------------------------
+.site-logo img,
+.author__avatar img {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
 
-    &:hover {
-      transform: scale(1.15);
-    }
+  &:hover {
+    transform: scale(1.15);
   }
+}
+
+// -----------------------------------------------------------------------------
+// Masthead polish for the Boku-style layout.
+// The MM masthead logo defaults are quite small; bump it up so the round
+// avatar reads clearly, and give it a little breathing room from the nav.
+// -----------------------------------------------------------------------------
+.site-logo img {
+  max-height: 2.5rem;         // Boku's masthead icon is ~40px tall
+  border-radius: 50%;         // keep the round crop consistent everywhere
+}
+
+// -----------------------------------------------------------------------------
+// Inline bio block at the top of the homepage.
+// Tighten line-height so `Name` / `LinkedIn • GitHub` / `Role` sit close
+// together the way Boku's does, instead of the default paragraph spacing.
+// -----------------------------------------------------------------------------
+.page__content > p:first-of-type {
+  margin-bottom: 0.25em;
+  line-height: 1.35;
 }
