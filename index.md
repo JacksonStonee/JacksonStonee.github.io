@@ -23,14 +23,11 @@ classes: wide
 
 # Digital Forensics and Incident Response
 
-- *(placeholder)* <!-- ADD: link to a DFIR writeup, case study, or war-story post -->
-- *(placeholder)* <!-- ADD: link to an IR runbook / playbook or forensic tool you've released -->
-- *(placeholder)* <!-- ADD: talk / conference slides on DFIR -->
+<!-- Add real DFIR posts here as bullets, e.g.:  - [Title](https://link) -->
 
 *Cyber Defenders*
 
-- *(placeholder)* <!-- ADD: link to a CyberDefenders lab writeup / walkthrough -->
-- *(placeholder)* <!-- ADD: link to another CyberDefenders challenge -->
+<!-- Add CyberDefenders lab writeups here as bullets, e.g.:  - [Lab Name](https://link) -->
 
 ---
 
