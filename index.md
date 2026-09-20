@@ -27,6 +27,11 @@ classes: wide
 - *(placeholder)* <!-- ADD: link to an IR runbook / playbook or forensic tool you've released -->
 - *(placeholder)* <!-- ADD: talk / conference slides on DFIR -->
 
+*Cyber Defenders*
+
+- *(placeholder)* <!-- ADD: link to a CyberDefenders lab writeup / walkthrough -->
+- *(placeholder)* <!-- ADD: link to another CyberDefenders challenge -->
+
 ---
 
 ### Recent Posts
