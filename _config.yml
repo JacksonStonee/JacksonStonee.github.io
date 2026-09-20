@@ -4,7 +4,7 @@
 
 # Theme
 remote_theme            : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin   : "default"   # "default" | "air" | "aqua" | "contrast" | "dark" | "dirt" | "mint" | "neon" | "plum" | "sunrise"
+minimal_mistakes_skin   : "dark"      # "default" | "air" | "aqua" | "contrast" | "dark" | "dirt" | "mint" | "neon" | "plum" | "sunrise"
 
 # Site
 locale                  : "en-US"
