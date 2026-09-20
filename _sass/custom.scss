@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// custom.scss — site-level overrides on top of Minimal Mistakes
+// -----------------------------------------------------------------------------
+//
+// This file is imported LAST in assets/css/main.scss, so any selector here
+// wins over the vendored theme without forking it.
+//
+// The only thing living here right now is the sidebar avatar hover-enlarge
+// effect migrated from the old Chirpy theme.
+//
+// TWEAK GUIDE (edit these two values, nothing else):
+//
+//   scale(1.15)      -> 15% enlarge on hover. Chirpy default ~1.05 (subtle);
+//                       common MM values: 1.10 / 1.15 / 1.20.
+//   transition 0.5s  -> half-second glide. Try 0.3s for snappier, 0.7s for
+//                       lazier. Keep the curve as ease-in-out for a smooth
+//                       feel — or swap to cubic-bezier(0.4, 0, 0.2, 1) for
+//                       the material-design curve most modern themes use.
+//                       Avoid `linear` (robotic) and `ease` (too snappy).
+//
+// We animate `transform: scale()` — NOT width/height — so the surrounding
+// sidebar layout never reflows while the image grows.
+// -----------------------------------------------------------------------------
+
+// Preserve hover-enlarge animation from Chirpy theme
+.author__avatar {
+  img {
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Main site navigation — rendered in the masthead
+# See: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+main:
+  - title: "Home"
+    url: /
+  - title: "Posts"
+    url: /posts/
+  - title: "Exploits"
+    url: /exploits/
+  - title: "About"
+    url: /about/

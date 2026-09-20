@@ -1,0 +1,9 @@
+---
+# Front matter is required so Jekyll processes this file through Sass.
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+@import "custom";           // site-level overrides (see _sass/custom.scss)
